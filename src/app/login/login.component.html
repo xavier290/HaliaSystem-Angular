@@ -1,0 +1,50 @@
+<div class="container-fluid ContenedorPrincipal">
+
+    <div class="ContenedorContenido">
+
+        <div class="Logo">
+
+
+            <img class="LogoImg" src="assets/LogoLogin.png">
+
+        </div>
+
+        <div class="Ingreso" >
+
+                <img class="LogoImgCell" src="assets/LogoLogin.png">
+
+                <h2>Iniciar Sesión</h2>
+                  
+                <div class="CenterTextos">
+                    <label for="txtUse" class="SubTextos" >Usuario</label>
+                    <input type="text" formControlName="Usuario" id="txtUser">
+                </div>
+
+                <div class="CenterTextos">
+                    <label for="txtPassword" class="SubTextos" >Contraseña</label>
+                    <input type="password" formControlName="Password" id="txtPassword">
+                </div>
+                <div class="CenterTextos">
+                    <label for="CmbEmpresa" class="SubTextos  combos">Empresa</label>
+                    <select class="form-select" id="CmbEmpresa"  (change)="onCompanyChange($event)">
+                      <option *ngFor="let company of companies" [value]="company.id">{{ company.name }}</option>
+                      <!-- Cambia "company.id" y "company.name" por las propiedades correctas de tu objeto company -->
+                    </select>
+                  </div>
+                  
+
+                <div class="CenterTextos">
+                    <label for="CmbSucursal" class="SubTextos  combos" >Sucursal</label>
+                    <select class="form-select" id="CmbSucursal">
+                        <option *ngFor="let branch of branches" [value]="branch._id">{{branch.name}}</option>
+                      </select>
+                </div>
+
+                <button id="BtnIngresar" (click)="onClicNewLogin()">Ingresar</button>
+                
+
+        </div>
+
+    </div>
+
+</div>

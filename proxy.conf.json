@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "https://sea-turtle-app-dekre.ondigitalocean.app",
+      "secure": false
+    }
+  }
+  

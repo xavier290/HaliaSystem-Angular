@@ -1,0 +1,56 @@
+<div class="MainContainer">
+    <div class="MainMenuContainer">
+        <img class="imgMenu imgCentral" src="assets/LogoMenu.png">
+
+        <button class="itemsMenu Catalog" (click)=" onClickExpandMenu('Catalogo')">
+            <img class="imgMenu" src="assets/ItemCatalog.svg">
+            <label class="ItemsMenuLabels">Catalogos</label>
+        </button>
+
+        <button class="itemsMenu Invent" (click)=" onClickExpandMenu('Inventario')">
+            <img class="imgMenu" src="assets/ItemInventory.svg">
+            <label class="ItemsMenuLabels">Inventario</label>
+        </button>
+
+    </div>
+    <div class="CenterContent">
+        <div class="NotificationBar">
+
+            <img class="imgHamburgerMenu" src="assets/ItemMenuHamburger.svg" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            <div class="ContainerLabels">
+                <label class="companyLabel">{{company}}</label>
+                <label class="userLabel">{{user}}</label>
+            </div>
+            <img class="imgNotification" src="assets/ItemNotification.svg">
+        </div>
+        <div class="MainContentChange"></div>
+    </div>
+
+    <div class="submenu-oculto">
+        <ul>
+        </ul>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">Menú con Categorías</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container mt-3">
+        <div class="category">
+          <h6 class="SubTitleMenu">Catalogo</h6>
+          <hr>
+          <div class="options">
+            <a class="dropdown-item SubItemnCategoria" >Proveedores</a>
+            <a class="dropdown-item SubItemnCategoria" >Líneas</a>
+            <a class="dropdown-item SubItemnCategoria" >Familias</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  

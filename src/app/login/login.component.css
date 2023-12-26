@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Satisfy&display=swap');
+
+*{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ContenedorPrincipal{
+background-color: #2D2D31;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ContenedorContenido{
+width: 100%;
+height: 90%;
+background-color: white;
+display: flex;
+margin: 5% ;
+border-radius: 10px;
+justify-content: space-around;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Logo{
+    background-color: #1F1F20;
+    width: 48%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Ingreso{
+    height: 95%;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    height: 5%;
+    width: 80%;
+    text-align: center;
+}
+
+.LogoImg{
+    width: 80%;
+    height: 80%;
+}
+
+.LogoImgCell{
+    display: none;
+}
+
+#txtPassword{
+    width: 100%;
+    border:0;
+    border-bottom: 1px solid #1F1F20;
+    padding-left: 3%;
+}
+
+#txtUser{
+    width: 100%;
+    border:0;
+    border-bottom: 1px solid #1F1F20;
+    padding-left: 3%;
+}
+
+.combos{
+    border-radius: 10px;
+}
+
+#BtnIngresar{
+    width: 55%;
+    height: 5%;
+    margin-top: 7%;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #2D2D31;
+    border: 0;
+}
+
+#BtnIngresar:hover{
+    background-color:orange ;
+}
+
+.CenterTextos{
+    width: 55%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-top: 2%;
+    
+}
+
+.SubTextos{
+    color: black;
+    margin-top: 5%;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+ /* Dispositivos extra pequeños (portrait phones, menos de 576px) */
+@media (max-width: 575.98px) { 
+
+    .Logo{
+        display:none;
+    }
+
+    .Ingreso{
+        width: 100%;
+    }
+
+    .CenterTextos{
+        width: 70%;
+    }
+
+    #BtnIngresar{
+        width: 70%;
+    }
+
+    .LogoImgCell{
+        width: 33%;
+        height: 15%;
+        display: inline;
+        margin-bottom: 4%;
+    }
+
+    .ContenedorContenido{
+        height: 95%;
+    }
+
+}
+
+/* Dispositivos pequeños (landscape phones, 576px a 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .Ingreso{
+        height: 100%;
+    }
+
+    .CenterTextos{
+        width: 90%;
+        margin-top: 1%;
+    }
+
+    #BtnIngresar{
+        width: 90%;
+    }
+
+    .SubTextos{
+        font-size: 14px;
+    }
+
+    h2{
+        height: 3%;
+        font-size: 16px;
+    }
+
+    #BtnIngresar{
+        width: 90%;
+        margin-top: 5%;
+        font-size: 16px;
+        height: 10%;
+    }
+
+ }
+/* Dispositivos medianos (tablets, 768px a 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    
+}
+
+/* Dispositivos grandes (desktops, 992px a 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/* Dispositivos extra grandes (large desktops, 1200px a 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { }
+
+/* Dispositivos extra extra grandes (larger desktops, 1400px y más) */
+@media (min-width: 1400px) { }
